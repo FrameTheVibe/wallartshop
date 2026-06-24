@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Frame The Vibe | Premium Wall Posters</title>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
+
+
+body{
+background:#f8f3ea;
+color:#111;
+}
+
+
+
+/* NAVBAR */
+
+header{
+
+background:#111;
+color:white;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+}
+
+
+.logo{
+
+font-size:30px;
+font-weight:700;
+letter-spacing:2px;
+color:#d4af37;
+
+}
+
+
+nav a{
+
+color:white;
+text-decoration:none;
+margin:0 15px;
+
+}
+
+
+.cart{
+
+background:#d4af37;
+color:black;
+padding:10px 20px;
+border-radius:30px;
+font-weight:bold;
+
+}
+
+
+
+/* SEARCH */
+
+.search-box{
+
+text-align:center;
+padding:30px;
+
+}
+
+
+.search-box input{
+
+width:60%;
+padding:15px;
+border-radius:30px;
+border:1px solid #ccc;
+font-size:16px;
+
+}
+
+
+
+/* HERO */
+
+
+.hero{
+
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:70px 8%;
+
+}
+
+
+.hero-text{
+
+width:45%;
+
+}
+
+
+.hero h1{
+
+font-size:60px;
+line-height:1.1;
+
+}
+
+
+.hero p{
+
+margin:25px 0;
+color:#555;
+
+}
+
+
+
+.btn{
+
+background:#111;
+color:white;
+padding:15px 35px;
+border-radius:30px;
+text-decoration:none;
+
+}
+
+
+.hero img{
+
+width:420px;
+border-radius:20px;
+
+}
+
+
+
+
+/* CATEGORY */
+
+
+.categories{
+
+padding:50px 8%;
+text-align:center;
+
+}
+
+
+.category-grid{
+
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+margin-top:30px;
+
+}
+
+
+.category{
+
+background:white;
+padding:30px;
+width:200px;
+border-radius:20px;
+box-shadow:0 10px 30px #ddd;
+
+}
+
+
+
+/* PRODUCTS */
+
+
+.products{
+
+padding:60px 8%;
+
+}
+
+
+.products h2{
+
+text-align:center;
+font-size:40px;
+
+}
+
+
+
+.product-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+margin-top:40px;
+
+}
+
+
+
+.card{
+
+background:white;
+padding:20px;
+border-radius:20px;
+box-shadow:0 10px 30px #ddd;
+
+}
+
+
+.card img{
+
+width:100%;
+height:320px;
+object-fit:cover;
+border-radius:15px;
+
+}
+
+
+.card h3{
+
+margin:15px 0;
+
+}
+
+
+.price{
+
+color:#c9a227;
+font-size:20px;
+font-weight:bold;
+
+}
+
+
+
+button{
+
+margin-top:15px;
+padding:12px 25px;
+border:none;
+border-radius:30px;
+background:#111;
+color:white;
+cursor:pointer;
+
+}
+
+
+.buy{
+
+background:#c9a227;
+color:black;
+
+}
+
+
+
+
+/* FOOTER */
+
+
+footer{
+
+background:#111;
+color:white;
+text-align:center;
+padding:25px;
+
+}
+
+
+
+/* MOBILE */
+
+
+@media(max-width:800px){
+
+.hero{
+
+flex-direction:column;
+
+}
+
+.hero-text{
+
+width:100%;
+
+}
+
+
+.hero h1{
+
+font-size:40px;
+
+}
+
+
+.hero img{
+
+width:100%;
+margin-top:30px;
+
+}
+
+}
+
+</style>
+
+
+</head>
+
+
+<body>
+
+
+
+<header>
+
+
+<div class="logo">
+Frame The Vibe
+</div>
+
+
+<nav>
+
+<a href="#">Home</a>
+<a href="#">Shop</a>
+<a href="#">About</a>
+
+</nav>
+
+
+<div class="cart">
+
+🛒 Cart: <span id="count">0</span>
+
+</div>
+
+
+</header>
+
+
+
+
+
+<div class="search-box">
+
+<input type="text" placeholder="Search posters...">
+
+</div>
+
+
+
+
+
+<section class="hero">
+
+
+<div class="hero-text">
+
+<h1>
+Elevate Your Walls With Art
+</h1>
+
+
+<p>
+Premium aesthetic posters designed to transform your rooms into beautiful spaces.
+</p>
+
+
+<a class="btn" href="#shop">
+Explore Collection
+</a>
+
+
+</div>
+
+
+<img src="https://images.unsplash.com/photo-1561214115-f2f134cc4912">
+
+
+</section>
+
+
+
+
+
+
+<section class="categories">
+
+
+<h2>
+Explore Styles
+</h2>
+
+
+<div class="category-grid">
+
+
+<div class="category">
+Minimal
+</div>
+
+
+<div class="category">
+Vintage
+</div>
+
+
+<div class="category">
+Motivational
+</div>
+
+
+<div class="category">
+Aesthetic
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<section class="products" id="shop">
+
+
+<h2>
+Trending Posters
+</h2>
+
+
+
+<div class="product-grid">
+
+
+
+<div class="card">
+
+
+<img src="https://images.unsplash.com/photo-1577083552431-6e5fd01988b5">
+
+
+<h3>
+Abstract Dreams
+</h3>
+
+
+<p class="price">
+₹499
+</p>
+
+
+<button onclick="addCart()">
+Add To Cart
+</button>
+
+
+<button class="buy">
+Buy Now
+</button>
+
+
+</div>
+
+
+
+
+
+
+<div class="card">
+
+
+<img src="https://images.unsplash.com/photo-1549490349-8643362247b5">
+
+
+<h3>
+Modern Art
+</h3>
+
+
+<p class="price">
+₹399
+</p>
+
+
+<button onclick="addCart()">
+Add To Cart
+</button>
+
+
+<button class="buy">
+Buy Now
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+
+<img src="https://images.unsplash.com/photo-1561214115-f2f134cc4912">
+
+
+<h3>
+Luxury Wall Print
+</h3>
+
+
+<p class="price">
+₹599
+</p>
+
+
+<button onclick="addCart()">
+Add To Cart
+</button>
+
+
+<button class="buy">
+Buy Now
+</button>
+
+
+</div>
+
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+<footer>
+
+© 2026 Frame The Vibe | Premium Wall Art
+
+</footer>
+
+
+
+
+<script>
+
+
+let cart=0;
+
+
+function addCart(){
+
+cart++;
+
+document.getElementById("count").innerHTML=cart;
+
+alert("Poster added to cart!");
+
+}
+
+
+</script>
+
+
+
+</body>
+
+</html>
